@@ -1,15 +1,19 @@
 {
-    "version": "0.2.0",
-    "configurations": [
-      {
-        "type": "java",
-        "name": "Launch Your App",
-        "request": "launch",
-        "mainClass": "com.drappointments.drappointments.DrappointmentsApplication",
-        "console": "internalConsole",
-        "stopOnEntry": false,
-        "classPath": "${workspaceFolder}/build/classes/java/main" // Adjust path if necessary
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Launch Your App",
+      "request": "launch",
+      "mainClass": "com.drappointments.drappointments.DrappointmentsApplication",
+      "console": "internalConsole",
+      "stopOnEntry": false,
+      "classPath": "${workspaceFolder}/build/classes/java/main",
+      "env": {
+        "SPRING_DATASOURCE_URL": "jdbc:mysql://sql7.freesqldatabase.com:3306/sql7726121",
+        "SPRING_DATASOURCE_USERNAME": "sql7726121",
+        "SPRING_DATASOURCE_PASSWORD": "ansg6Htg6B"
       }
-    ]
-  }
-  
+    }
+  ]
+}

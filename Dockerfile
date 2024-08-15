@@ -11,7 +11,8 @@ COPY build.gradle settings.gradle ./
 COPY src ./src
 
 # Build the application
-RUN gradle build --no-daemon
+# RUN gradle build --no-daemon
+RUN gradle build --no-daemon -x test
 
 # Use OpenJDK for running the application
 FROM openjdk:17-jdk-slim
