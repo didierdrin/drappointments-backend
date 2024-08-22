@@ -4,6 +4,8 @@ import lombok.Data;
 import jakarta.persistence.Column;
 import jakarta.persistence.Id;
 import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Table;
 
 @Entity
@@ -12,6 +14,7 @@ import jakarta.persistence.Table;
 public class Appointments {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "ID")
     private int id;
 
