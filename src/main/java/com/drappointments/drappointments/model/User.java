@@ -8,10 +8,9 @@ import jakarta.persistence.*;
 @Data
 @Table(name = "USERS")
 public class User {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)  
+    @Id 
     @Column(name = "ID")
-    private int id;
+    private String id;
 
     @Column(name = "USERNAME")
     private String username;
